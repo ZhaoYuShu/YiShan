@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>我的</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/mine.css" type="text/css"/>
+</head>
+<body>
+
+<!--头部-->
+<header>
+    <img src="../img/portrait2.jpg" class="portrait"/>
+    <div class="message">
+        <p class="username">小脚裤</p>
+        <p class="mobile">
+            <img src="../img/mobile.gif"/>
+            <span>159****6789</span>
+        </p>
+    </div>
+
+    <a href="information.html">
+        <img src="../img/right.gif" class="right"/>
+    </a>
+
+
+</header>
+
+
+<!--列表项-->
+<div class="list">
+
+    <ul>
+        <li class="address">
+            <a href="address.html">
+                <img src="../img/address.png" class="left"/>
+                <span>我的地址</span>
+                <img src="../img/right2.gif" class="right"/>
+            </a>
+
+        </li>
+        <li class="change">
+            <a href="changeTel.html">
+                <img src="../img/mobile3.png" class="left"/>
+                <span>修改手机号</span>
+                <img src="../img/right2.gif" class="right"/>
+            </a>
+
+        </li>
+        <li class="about" style="margin:0;">
+            <a href="#">
+                <img src="../img/about.png" class="left"/>
+                <span>关于我们</span>
+                <img src="../img/right2.gif" class="right"/>
+            </a>
+
+        </li>
+    </ul>
+
+</div>
+
+
+<!--退出按钮-->
+<div class="quit">
+    <button class="quitBtn">退出登录</button>
+</div>
+
+<!--底部-->
+<footer>
+    <ul>
+        <li class="home">
+            <a href="../index.html">
+                <img src="../img/home.png"/>
+                <span>首页</span>
+            </a>
+
+        </li>
+        <li class="order">
+            <a href="order.html">
+                <img src="../img/order.png"/>
+                <span>订单</span>
+            </a>
+
+        </li>
+        <li class="mine">
+            <a href="mine.html">
+                <img src="../img/mine.png"/>
+                <span>我的</span>
+            </a>
+
+        </li>
+    </ul>
+
+</footer>
+
+
+<!--弹出层-->
+<div class="modal">
+    <h4>确认退出</h4>
+    <p>退出登录后将无法查看订单，重新登录后即可查看</p>
+    <button class="cancel">取消</button>
+    <button class="confirm">确认</button>
+</div>
+<!--遮罩层-->
+<span class="mask"></span>
+
+
+<script src="../js/vendor/jquery-3.2.1.min.js"></script>
+<script src="../js/mine.js"></script>
+<script>
+    $(function(){
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        console.log(width,height);
+        $("body").css({width:width + "px",height:height + "px"});
+        $("html").css("fontSize",width/375 +"em");
+        $(".mask").css({width:width + "px",height:height + "px"});
+    })
+</script>
+</body>
+</html>

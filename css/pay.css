@@ -1,0 +1,183 @@
+
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #efefef;
+    margin:0;
+    padding:0;
+}
+
+/*头部*/
+.header{
+    width:100%;
+    height:2.875rem;
+    background-color: #808080;
+    padding:0 0.75rem;
+    box-sizing: border-box;
+    position:relative;
+}
+.header img{
+    position:absolute;
+    left:0.75rem;
+    top:0.875rem;
+}
+.header h4{
+    margin:0;
+    font-size:1.125rem;
+    font-weight:300;
+    color:#fefefe;
+    text-align: center;
+    line-height:2.875rem;
+}
+
+/*内容部分*/
+.container{
+    width:100%;
+}
+
+/*订单详情*/
+.container .orderDetails{
+    height:15.75rem;
+    width:22.25rem;
+    background-color: #fff;
+    margin:0 auto;
+    margin-bottom:0.875rem;
+}
+.container .orderDetails .list{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    padding-top:0.625rem;
+    padding-left:1rem;
+}
+.container .orderDetails .list li{
+    line-height:1.625rem;
+    font-size:0.75rem;
+    position: relative;
+}
+.orderDetails .list .left{
+    color:#a8a8a8;
+}
+.orderDetails .list .right{
+    margin-right:2rem;
+    position: absolute;
+    left:6rem;
+    top:0;
+    color:#747474;
+}
+
+
+/*费用详情*/
+.priceDetails{
+    width:22.25rem;
+    background-color: #fff;
+    margin:0 auto;
+    height:7.5rem;
+}
+.priceDetails ul{
+    width:100%;
+    height:100%;
+    margin-left:1rem;
+    padding:0;
+}
+.priceDetails ul li{
+    font-size:0.75rem;
+    position:relative;
+}
+.priceDetails ul .basic{
+    padding-top:1rem;
+    margin-bottom:1rem;
+
+}
+.priceDetails ul .price{
+    padding-bottom:1rem;
+    border-bottom:1px solid #d6d6d6;
+    margin-bottom:0.75rem;
+}
+.priceDetails ul .left{
+    color:#a8a8a8;
+}
+.priceDetails ul .right{
+    color:#656565;
+    position:absolute;
+    left:6rem;
+}
+
+/*支付方式*/
+.payment{
+    width:22.25rem;
+    height:8.125rem;
+    background-color: #fff;
+    margin:0 auto;
+    margin-bottom:1.5rem;
+}
+.payment .title{
+    margin:0;
+    background-color: #efefef;
+    height:2.125rem;
+    line-height:2.125rem;
+    font-size:0.875rem;
+    padding-left:0.625rem;
+    color:#b0b2b3;
+}
+.payment .modes{
+    width:100%;
+    height:6rem;
+    color:#b5b7b8;
+    font-size:0.75rem;
+    padding-left:1rem;
+}
+.payment .modes .wechat{
+    display: block;
+    line-height:1.75rem;
+}
+.payment .modes .wechat span{
+    clear:both;
+    float:left;
+}
+.payment .modes .wechat input{
+    float:right;
+    margin-right:3rem;
+    margin-top:0.5rem;
+}
+.payment .modes .alipay{
+    display: block;
+    line-height:1.75rem;
+}
+.payment .modes .alipay span{
+    clear:both;
+    float:left;
+}
+.payment .modes .alipay input{
+    float:right;
+    margin-right:3rem;
+    margin-top:0.5rem;
+}
+.payment .modes .bankCard{
+    display: block;
+    line-height:1.75rem;
+}
+.payment .modes .bankCard span{
+    clear:both;
+    float:left;
+}
+.payment .modes .bankCard input{
+    float:right;
+    margin-right:3rem;
+    margin-top:0.5rem;
+}
+
+/*确认支付按钮*/
+.payMoney{
+    display: block;
+    width:19.875rem;
+    height:3rem;
+    margin:0 auto;
+    border:none;
+    outline:none;
+    background-color: #898989;
+    color:#cbcbcb;
+    font-size:1.125rem;
+    border-radius:0.5rem;
+}

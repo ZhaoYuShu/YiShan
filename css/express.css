@@ -1,0 +1,84 @@
+
+
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*background-color: #efefef;*/
+    margin:0;
+    padding:0;
+}
+
+/*头部*/
+.header{
+    width:100%;
+    height:2.875rem;
+    background-color: #808080;
+    padding:0 0.75rem;
+    box-sizing: border-box;
+    position:relative;
+}
+.header img{
+    position:absolute;
+    left:0.75rem;
+    top:0.875rem;
+}
+.header h4{
+    margin:0;
+    font-size:1.125rem;
+    font-weight:300;
+    color:#fefefe;
+    text-align: center;
+    line-height:2.875rem;
+}
+.header span{
+    font-size:0.75rem;
+    color:#fcfcfc;
+    position:absolute;
+    right:0.75rem;
+    top:0.875rem;
+}
+
+
+/*列表项样式*/
+.container {
+    background-color: #fff;
+}
+.container .list{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.container .list li{
+    height:3.75rem;
+    width:100%;
+    margin-left:1rem;
+    border-bottom:1px solid #e3e3e3;
+}
+.container .list li .logo{
+    width:2.813rem;
+    height:2.813rem;
+    float:left;
+    margin-top:0.375rem;
+}
+.container .list li div{
+    width:17.625rem;
+    float:left;
+    height:100%;
+    padding-left:0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.container .list li .company{
+    margin:0;
+}
+.container .list li .introduce{
+    margin:0;
+    font-size:0.75rem;
+    color:#9a9a9a;
+}
+.container .list li .right{
+    margin-top:1.5rem;
+}

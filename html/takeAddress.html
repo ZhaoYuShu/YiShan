@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>取货地址</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/takeAddress.css" type="text/css"/>
+</head>
+<body>
+
+<!--头部-->
+<div class="header">
+    <a href="javascript:history.back(-1)">
+        <img src="../img/left.gif"/>
+    </a>
+
+    <h4>价格明细</h4>
+
+</div>
+<div style="width:100%;height:3.375rem;background-color: #808080;"></div>
+
+<!--当前地址-->
+<div class="current">
+    <div>
+
+        <img src="../img/location2.gif"/>
+        <span class="address">沧州市南皮县大浪淀乡</span>
+        <span class="mark">当前</span>
+
+    </div>
+    <input type="text" placeholder="请输入详细地址"/>
+</div>
+
+<!--地图-->
+<div id="map"></div>
+
+<!--我周边的站点-->
+<div class="near">
+    <p class="title">我周边的站点</p>
+    <ul class="list">
+        <li>
+            <span class="left">沧州市南皮县大浪淀乡淀乡客运站</span>
+            <span class="right">3.9km</span>
+        </li>
+        <li>
+            <span class="left">沧州市南皮县乌马营站点</span>
+            <span class="right">4.9km</span>
+        </li>
+        <li>
+            <span class="left">沧州市南皮县小集乡王武伯站点</span>
+            <span class="right">5.8km</span>
+        </li>
+        <li>
+            <span class="left">沧州市南皮县县城幸福大街</span>
+            <span class="right">8.9km</span>
+        </li>
+    </ul>
+</div>
+
+
+
+<script src="../js/vendor/jquery-3.2.1.min.js"></script>
+<script src="https://webapi.amap.com/maps?v=1.4.2&key=809245956602e754e6a6629e6ddd2474"></script>
+<script src="../js/takeAddress.js"></script>
+<script>
+    $(function(){
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        console.log(width,height);
+        $("body").css({width:width + "px",height:height + "px"});
+        $("html").css("fontSize",width/375 +"em");
+        $(".mask").css({width:width + "px",height:height + "px"});
+
+
+    })
+</script>
+
+</body>
+</html>

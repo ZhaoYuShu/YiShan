@@ -1,0 +1,238 @@
+
+
+/*我的页面*/
+
+body{
+    overflow: hidden;
+    background-color: #efefef;
+    margin:0;
+    padding:0;
+}
+
+/*头部*/
+header{
+    width:100%;
+    height:7.125rem;
+    background-color: #808080;
+    padding-top:1.438rem;
+    border-bottom:1px solid #b7b7b7;
+    margin-bottom:1rem;
+}
+header .portrait{
+    width:3.813rem;
+    height:3.813rem;
+    margin-left:1.438rem;
+    float:left;
+}
+
+header .message{
+    width:14.75rem;
+    height:3.813rem;
+    float:left;
+    padding:0 0 0.5rem 0;
+    margin-left:1.25rem;
+}
+header .message .username{
+    font-size:1.125rem;
+    color:#fefefe;
+    margin-bottom:0.5rem;
+    margin-top:0.5rem;
+}
+header .message .mobile{
+    margin:0;
+    font-size:0.75rem;
+    color:#c9c9c9;
+}
+
+header .right{
+    float:left;
+    margin-top:1.5rem;
+}
+
+
+
+/*列表*/
+.list{
+    width:100%;
+    height:9.438rem;
+    background-color: #fff;
+    margin-bottom:1rem;
+}
+.list ul,.list ul li{
+    list-style: none;
+
+}
+.list ul {
+    padding:1.375rem;
+    font-size:1rem;
+    width:100%;
+    height:9.438rem;
+}
+.list ul li {
+    margin-bottom:1.25rem;
+
+    position:relative;
+}
+.list li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.list li span{
+    color:#2b2b2b;
+}
+ul .address .left{
+    width:1rem;
+    height:1rem;
+    margin-right:1rem;
+}
+ul .address .right{
+    position:absolute;
+    right:0;
+    top:0.438rem;
+}
+
+ul .change .left{
+    width:1rem;
+    height:1rem;
+    margin-right:1rem;
+}
+ul .change .right{
+    position:absolute;
+    right:0;
+    top:0.438rem;
+}
+
+ul .about .left{
+    width:1rem;
+    height:1rem;
+    margin-right:1rem;
+}
+ul .about .right{
+    position:absolute;
+    right:0;
+    top:0.438rem;
+}
+
+
+/*退出登录按钮*/
+.quit{
+    width:100%;
+    height:3rem;
+}
+.quit .quitBtn{
+    width:100%;
+    height:100%;
+    border:none;
+    outline:none;
+    background-color: #fff;
+    font-size:1rem;
+    color:#9fa2a4;
+}
+
+
+/*底部tabbar*/
+footer{
+    width:100%;
+    height:3.375rem;
+    position: fixed;
+    left:0;
+    bottom:0;
+    background-color: #f5f5f5;
+}
+
+footer ul{
+    padding:0;
+    height:3.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:0;
+}
+
+footer ul li a{
+    float:left;
+    height:3.375rem;
+    font-size:0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer .home span{
+    color:#2c2c2c;
+}
+footer .order span{
+    color:#2c2c2c;
+}
+footer .mine span{
+    color:#2c2c2c;
+}
+
+
+/*弹出层*/
+.modal{
+    width:20.188rem;
+    height:11.75rem;
+    background-color: #fff;
+    position:fixed;
+    bottom:15rem;
+    left:1.625rem;
+    z-index:3;
+    border-radius:0.5rem;
+    display:none;
+}
+.modal h4{
+    padding:0;
+    font-size:1.125rem;
+    padding-top:1.375rem;
+    text-align: center;
+    margin-bottom:1.5rem;
+}
+.modal p{
+    font-size:1rem;
+    text-align: center;
+    padding:0 3rem;
+    margin-top:0;
+}
+.modal .cancel{
+    width:50%;
+    height:3.625rem;
+    font-size:1rem;
+    margin:0;
+    padding:0;
+    outline:none;
+    float:left;
+    border:none;
+    border-top:1px solid #e3e3e3;
+    border-right:1px solid #e3e3e3;
+    background-color: #fff;
+    color:#a2a2a2;
+    border-bottom-left-radius: 0.5rem;
+}
+.modal .confirm{
+    width:50%;
+    height:3.625rem;
+    font-size:1rem;
+    margin:0;
+    padding:0;
+    outline:none;
+    float:left;
+    border:none;
+    background-color: #fff;
+    border-top:1px solid #e3e3e3;
+    border-bottom-right-radius:0.5rem;
+}
+
+/*遮罩层*/
+.mask{
+    position:fixed;
+    left:0;
+    top:0;
+    display: block;
+    background-color: rgba(0,0,0,.5);
+    z-index:2;
+    display: none;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>编辑我的地址</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/address2.css" type="text/css"/>
+</head>
+<body>
+
+<div class="header">
+    <a href="mine.html">
+        <img src="../img/left.gif"/>
+    </a>
+
+    <h4>我的地址</h4>
+
+</div>
+
+<div class="list">
+    <ul>
+        <li class="name">
+            <span>姓名</span>
+            <input type="text" value="李宁宁"/>
+            <b class="clear">×</b>
+        </li>
+        <li class="mobile">
+            <span>电话</span>
+            <input type="text" value="13245674656"/>
+            <b class="clear">×</b>
+        </li>
+        <li class="address">
+            <span>地址</span>
+            <input type="text" value="沧州市一世界17号楼1单元12楼"/>
+            <b class="clear">×</b>
+        </li>
+        <li class="mark">
+            <span>标签</span>
+            <span class="home">家</span>
+            <span class="company">公司</span>
+        </li>
+    </ul>
+</div>
+
+<script src="../js/vendor/jquery-3.2.1.min.js"></script>
+<script src="../js/address2.js"></script>
+<script>
+    $(function(){
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        console.log(width,height);
+        $("body").css({width:width + "px",height:height + "px"});
+        $("html").css("fontSize",width/375 +"em");
+    })
+</script>
+</body>
+</html>

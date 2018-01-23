@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/address.css" type="text/css"/>
+</head>
+<body>
+
+<div class="header">
+    <a href="mine.html">
+        <img src="../img/left.gif"/>
+    </a>
+
+    <h4>我的地址</h4>
+
+    <img src="../img/garbage.gif" class="delete">
+
+</div>
+
+
+<div class="list">
+    <ul>
+        <li>
+            <div>
+                <span class="mark">家</span>
+                <span class="address">沧州市一世界17号楼1单元12楼</span>
+                <span class="name">李宁宁（女士）</span>
+                <span class="mobile">13234543454</span>
+            </div>
+            <a href="address2.html">
+                <img src="../img/edit.gif"/>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script src="../js/vendor/jquery-3.2.1.min.js"></script>
+<script>
+    $(function(){
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        console.log(width,height);
+        $("body").css({width:width + "px",height:height + "px"});
+        $("html").css("fontSize",width/375 +"em");
+    })
+</script>
+</body>
+</html>

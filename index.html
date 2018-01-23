@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <title>首页</title>
+        <link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
+        <link rel="stylesheet" href="css/main.css" type="text/css"/>
+        <link rel="stylesheet" href="css/index.css" type="text/css"/>
+    </head>
+    <body>
+
+        <div class="header">
+
+            <h4>首页</h4>
+            <img src="img/hotLine.png" class="hotLineImg"/>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-color: red">Slide 1</div>
+                <div class="swiper-slide" style="background-color: blue">Slide 2</div>
+                <div class="swiper-slide" style="background-color: green">Slide 3</div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <!--<div class="swiper-button-prev"></div>-->
+            <!--<div class="swiper-button-next"></div>-->
+
+            <!-- 如果需要滚动条 -->
+            <!--<div class="swiper-scrollbar"></div>-->
+        </div>
+
+        <div class="main">
+            <div class="address">
+                <p class="top">
+                    <img src="img/address.png"/>
+                    <span>当前位置</span>
+                </p>
+                <p class="bottom">沧州市沧县大王庄乡刘应村</p>
+            </div>
+            <div class="business">
+                <dl class="left">
+                    <div class="circle">
+                        <img src="img/up.png"/>
+                    </div>
+                    <dt>帮我取</dt>
+                    <dd>把您的物品安心接回家</dd>
+                </dl>
+                <dl class="right">
+                    <div class="circle">
+                        <img src="img/up.png"/>
+                    </div>
+                    <dt>帮我送</dt>
+                    <dd>帮您的物品放心送出去</dd>
+                </dl>
+            </div>
+        </div>
+
+
+
+        <!--底部-->
+        <footer>
+            <ul>
+                <li class="home">
+                    <a href="index.html">
+                        <img src="img/home.png"/>
+                        <span>首页</span>
+                    </a>
+
+                </li>
+                <li class="order">
+                    <a href="html/order.html">
+                        <img src="img/order.png"/>
+                        <span>订单</span>
+                    </a>
+
+                </li>
+                <li class="mine">
+                    <a href="html/mine.html">
+                        <img src="img/mine.png"/>
+                        <span>我的</span>
+                    </a>
+
+                </li>
+            </ul>
+
+        </footer>
+
+        <!--弹出客服电话-->
+        <div class="hotLine">
+            <p class="title">呼叫电话</p>
+            <h4 class="number">+86 132 1456 5643</h4>
+            <div class="btns">
+                <button class="cancel">取消</button>
+                <button class="confirm">确定</button>
+            </div>
+        </div>
+
+
+        <!--遮罩层-->
+        <span class="mask"></span>
+
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <script src="js/vendor/swiper-3.4.2.jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(function(){
+                var width = document.documentElement.clientWidth;
+                var height = document.documentElement.clientHeight;
+                console.log(width,height);
+                $("body").css({width:width + "px",height:height + "px"});
+                $("html").css("fontSize",width/375 +"em");
+                $(".mask").css({width:width + "px",height:height + "px"});
+            })
+        </script>
+
+        <script>
+            $(function(){
+                var mySwiper = new Swiper ('.swiper-container', {
+                    direction: 'horizontal',
+                    loop: true,
+                    autoplay:3000,
+                    speed:1000,
+                    // 如果需要分页器
+                    pagination: '.swiper-pagination'
+
+                    // 如果需要前进后退按钮
+                    // nextButton: '.swiper-button-next',
+                    // prevButton: '.swiper-button-prev',
+
+                    // 如果需要滚动条
+                    // scrollbar: '.swiper-scrollbar'
+                })
+            })
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>高德地图</title>
+    <style>
+        #container{
+            width:100%;
+            height:600px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="container"></div>
+
+<script src="https://webapi.amap.com/maps?v=1.4.2&key=809245956602e754e6a6629e6ddd2474"></script>
+<script>
+
+
+
+
+    var map = new AMap.Map("container");
+
+
+    AMap.plugin("AMap.Driving",function(){
+        var driving= new AMap.Driving({
+            map: map
+        });
+        map.plugin(driving);
+
+        driving.search([{keyword:"沧县高川村",city:"沧州市"},{keyword:"沧县南王村",city:"沧州市"}], function(status, result) {
+            //TODO 解析返回结果，自己生成操作界面和地图展示界面
+        });
+
+    });
+
+
+
+
+
+
+</script>
+</body>
+</html>

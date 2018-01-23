@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>更改当前定位</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/location.css" type="text/css"/>
+</head>
+<body>
+
+<!--头部-->
+<div class="header">
+    <span class="close">×</span>
+    <h4>更改当前定位</h4>
+</div>
+
+<div class="middle">
+    <div class="city">
+        <span>沧州市</span>
+        <img src="../img/down.png"/>
+    </div>
+    <input type="text" placeholder="请输入您的地址"/>
+</div>
+<div class="bottom">
+    <div class="current">当前位置</div>
+    <div class="address">
+        <span>沧州市沧县大王庄乡刘应村</span>
+        <div>
+            <img src="../img/location.png"/>
+            <span class="refresh">重新定位</span>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="../js/vendor/jquery-3.2.1.min.js"></script>
+<script src="../js/location.js"></script>
+<script>
+    $(function(){
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        console.log(width,height);
+        $("body").css({width:width + "px",height:height + "px"});
+        $("html").css("fontSize",width/375 +"em");
+    })
+</script>
+
+</body>
+</html>

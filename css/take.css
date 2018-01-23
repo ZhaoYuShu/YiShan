@@ -1,0 +1,634 @@
+
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #efefef;
+    margin:0;
+    padding:0;
+}
+
+/*头部*/
+.header{
+    width:100%;
+    height:2.875rem;
+    background-color: #808080;
+    padding:0 0.75rem;
+    margin-bottom:0.875rem;
+    box-sizing: border-box;
+    position:fixed;
+    left:0;
+    top:0;
+}
+.header img{
+    position:absolute;
+    left:0.75rem;
+    top:0.875rem;
+}
+.header h4{
+    margin:0;
+    font-size:1.125rem;
+    font-weight:300;
+    color:#fefefe;
+    text-align: center;
+    line-height:2.875rem;
+}
+.header span{
+    font-size:0.75rem;
+    color:#fcfcfc;
+    position:absolute;
+    right:0.75rem;
+    top:0.875rem;
+}
+
+/*搜索框*/
+.search{
+    width:21.563rem;
+    height:2.813rem;
+    background-color: #fff;
+    margin:0 auto;
+    box-shadow: 0.5rem 0.5rem 1rem 0.15rem #ccc;
+    margin-bottom:1rem;
+    margin-top:3.75rem;
+}
+.search input{
+    width:17.375rem;
+    height:2.813rem;
+    border:none;
+    outline:none;
+    font-size:1rem;
+    text-indent: 1rem;
+    border-right:1px solid #f4f4f4;
+    padding:0;
+    float:left;
+}
+.search button{
+    width:4.125rem;
+    height:2.75rem;
+    background-color: #fff;
+    border:none;
+    outline:none;
+    padding:0;
+    font-size:1rem;
+    color:#95989a;
+}
+
+/*下单须知*/
+.information{
+    width:20rem;
+    height:31.563rem;
+    position:fixed;
+    left:1.75rem;
+    top:8rem;
+    background-color: #fff;
+    z-index: 20;
+    border-radius:0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+}
+
+/*遮罩层*/
+.mask{
+    background-color: rgba(0,0,0,.5);
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:10;
+    display: none;
+}
+
+
+/*第一页内容*/
+
+/*取件类别*/
+.type{
+    width:100%;
+    height:10rem;
+    background-color: #fff;
+}
+.type .title{
+    font-size:1rem;
+    color:#555555;
+    width:100%;
+    height:2.5rem;
+    border-bottom:1px solid #e2e2e2;
+    line-height:2.5rem;
+    text-indent: 1rem;
+}
+.type div{
+    padding-left:1rem;
+}
+.type div span{
+    display: block;
+    float:left;
+    width:4.5rem;
+    height:1.75rem;
+    border:1px solid #e0e0e0;
+    border-radius:2rem;
+    margin-right:1rem;
+    margin-bottom:1rem;
+    text-align: center;
+    line-height: 1.75rem;
+    font-size:0.75rem;
+    color:#c6c6c6;
+}
+.type div .active{
+    background-color: #e0e0e0;
+    color:#fff;
+}
+.type div .others{
+    width:9.375rem;
+    height:1.75rem;
+    border:none;
+    outline:none;
+    border-bottom:1px solid #e0e0e0;
+    padding:0;
+    display: none;
+}
+.type div .fourth{
+    margin-right:0;
+}
+
+
+
+/*取货模块*/
+.pick{
+    width:100%;
+    height:8.875rem;
+    margin:0;
+}
+.pick .title{
+    margin:0;
+    height:2.25rem;
+    width:100%;
+    line-height:2.25rem;
+    text-indent: 1rem;
+    font-size:1rem;
+    color:#555555;
+}
+.pick .box1{
+    width:100%;
+    height:3.25rem;
+    border-bottom:1px solid #ededed;
+    background-color: #fff;
+    position:relative;
+}
+.pick .box1 .name{
+    width:7.5rem;
+    height:3.25rem;
+    border:none;
+    outline:none;
+    font-size:0.875rem;
+    text-indent: 1rem;
+    border-right:1px solid #ededed;
+    padding:0;
+}
+.pick .box1 .mobile{
+    width:12rem;
+    height:3.25rem;
+    text-indent: 1rem;
+    border:none;
+    outline:none;
+    font-size:0.875rem;
+    padding:0;
+}
+.pick .box1 img{
+    width:1.5rem;
+    height:1.25rem;
+    position:absolute;
+    right:1.25rem;
+    top:1rem;
+}
+.pick .box2{
+    width:100%;
+    height:3.25rem;
+    background-color: #fff;
+}
+.pick .box2 .address{
+    width:19rem;
+    height:3.25rem;
+    font-size:0.875rem;
+    text-indent: 1rem;
+    margin:0;
+    float:left;
+    line-height:3.25rem;
+    color:#a7a7a7;
+}
+.pick .box2 button {
+    width:3rem;
+    height:3.25rem;
+    border:none;
+    outline:none;
+    background-color: #fff;
+    font-size:0.875rem;
+    color:#a7a7a7;
+    margin-left:0.45rem;
+}
+
+/*收货模块*/
+.get{
+    width:100%;
+    height:9.25rem;
+}
+.get .title{
+    font-size:1rem;
+    color:#555;
+    margin:0;
+    height:2.625rem;
+    line-height:2.625rem;
+    text-indent: 1rem;
+}
+.get .box1{
+    width:100%;
+    height:3.125rem;
+    border-bottom:1px solid #ededed;
+    background-color: #fff;
+    position:relative;
+}
+.get .box1 .name{
+    width:7.5rem;
+    height:3.125rem;
+    border:none;
+    outline:none;
+    font-size:0.875rem;
+    text-indent: 1rem;
+    border-right:1px solid #ededed;
+    padding:0;
+}
+.get .box1 .mobile{
+    width:10rem;
+    height:3.125rem;
+    text-indent: 1rem;
+    border:none;
+    outline:none;
+    font-size:0.875rem;
+    padding:0;
+}
+.get .box1 button{
+    width:4.5rem;
+    height:3.125rem;
+    font-size:0.75rem;
+    border:none;
+    outline:none;
+    background-color: #fff;
+    position:absolute;
+    right:0.45rem;
+    top:0;
+    padding:0;
+}
+.get .box2{
+    width:100%;
+    height:3.25rem;
+    background-color: #fff;
+}
+.get .box2 .address{
+    width:19rem;
+    height:3.25rem;
+    margin:0;
+    font-size:0.875rem;
+    text-indent: 1rem;
+    float:left;
+    line-height:3.25rem;
+    color:#a7a7a7;
+}
+.get .box2 button {
+    width:3rem;
+    height:3.25rem;
+    border:none;
+    outline:none;
+    background-color: #fff;
+    font-size:0.875rem;
+    color:#a7a7a7;
+    margin-left:0.45rem;
+}
+
+
+/*备注留言*/
+.message{
+    width:100%;
+    height:8.125rem;
+    padding-bottom:4.688rem;
+}
+.message .title{
+    width:100%;
+    height:2.625rem;
+    line-height: 2.625rem;
+    margin:0;
+    text-indent: 1rem;
+    font-size:1rem;
+    color:#555;
+}
+.message textarea{
+    width:100%;
+    height:5.25rem;
+    border:none;
+    outline:none;
+}
+
+/*去支付*/
+.pay{
+    width:100%;
+    height:4rem;
+    background-color: #fff;
+    position:fixed;
+    left:0;
+    bottom:0;
+}
+.pay p{
+    width:16.875rem;
+    height:4rem;
+    float:left;
+    line-height:4rem;
+    margin:0;
+    text-indent: 1rem;
+    position:relative;
+}
+.pay p .yuan{
+    color:#585858;
+    font-size:1.25rem;
+}
+.pay p .cents{
+    color:#585858;
+}
+.pay p .unit{
+    color:#a4a7a8;
+    font-size:0.75rem;
+}
+.pay p .details{
+    color:#a4a7a8;
+    font-size:0.75rem;
+    position:absolute;
+    right:1.25rem;
+}
+.pay button{
+    width:6.5rem;
+    height:100%;
+    background-color:#aaaaaa;
+    color:#efefef;
+    font-size:1.375rem;
+    border:none;
+    outline:none;
+    padding:0;
+}
+
+/*常用地址*/
+.usedAddress{
+    width:100%;
+    height:18.75rem;
+    background-color: #fff;
+    position:fixed;
+    left:0;
+    bottom:0;
+    overflow-y: auto;
+    display: none;
+    z-index:20;
+}
+
+.usedAddress .title{
+    margin:0;
+    height:3rem;
+    border-bottom:1px solid #d8d8d8;
+    line-height:3rem;
+    text-align: center;
+    width:100%;
+    position:fixed;
+    left:0;
+    top:23rem;
+    z-index: 30;
+    background-color: #fff;
+}
+.usedAddress .list{
+    margin:0;
+    padding:0;
+    padding-top:3rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.usedAddress .list li{
+    width:100%;
+    padding:0.75rem 0.75rem 1.125rem;
+    border-bottom:1px solid #d8d8d8;
+    position:relative;
+}
+.usedAddress .list li p{
+    font-size:0.875rem;
+    color:#a0a2a4;
+    margin:0;
+    line-height:1.25rem;
+}
+.usedAddress .list button{
+    width:4.5rem;
+    height:1.5rem;
+    background-color: #fff;
+    outline:none;
+    border-radius:1rem;
+    border:1px solid #d8d8d8;
+    color:#c7c7c7;
+    font-size:0.75rem;
+    position:absolute;
+    right:2.5rem;
+    top:1.5rem;
+}
+.usedAddress .list .defaultActive{
+    background-color: #b1b1b1;
+    border-color:#95989a;
+    color:#efefef;
+}
+
+
+/*未找到当前快递单号*/
+.unfound{
+    width:19.5rem;
+    height:17rem;
+    background-color: #fff;
+    border-radius:0.5rem;
+    position:fixed;
+    left:1.875rem;
+    top:14rem;
+    display:none;
+    z-index:20;
+}
+.unfound .title{
+    margin:0;
+    text-align: center;
+    font-size:1.125rem;
+    height:4rem;
+    line-height:4rem;
+    border-bottom:1px solid #e3e3e3;
+    color:#363636;
+    margin-bottom:1.75rem;
+}
+.unfound .number{
+    width:14.875rem;
+    height:2.75rem;
+    line-height:2.75rem;
+    text-align: center;
+    border:1px solid #e3e3e3;
+    margin:0 auto;
+    border-radius:0.5rem;
+    color:#5c5c5c;
+    margin-bottom:1.875rem;
+}
+.unfound .toCompany{
+    width:14.875rem;
+    height:2.75rem;
+    line-height: 2.75rem;
+    text-align: center;
+    border:none;
+    outline:none;
+    background-color: #727272;
+    color:#dedede;
+    border-radius: 0.5rem;
+    margin:0 auto;
+    display: block;
+    font-size:1rem;
+}
+
+/*访问通讯录*/
+.dialog{
+    width:19.5rem;
+    height:11.688rem;
+    background-color: #fff;
+    border-radius:0.5rem;
+    position:fixed;
+    left:2rem;
+    top:14rem;
+    z-index:20;
+    display: none;
+}
+.dialog .title{
+    margin-top:3.125rem;
+    margin-bottom:1rem;
+    text-align: center;
+    font-size:1.125rem;
+}
+.dialog .message{
+    text-align: center;
+    font-size:.75rem;
+    color:#373737;
+    padding-bottom:0;
+    height:0.75rem;
+}
+.dialog .btns{
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:3.625rem;
+    width:100%;
+    border-top:1px solid #e3e3e3;
+}
+.dialog .btns .cancel{
+    width:50%;
+    height:100%;
+    background-color: #fff;
+    border:none;
+    outline:none;
+    border-right:1px solid #e3e3e3;
+    font-size:1.125rem;
+    color:#a2a2a2;
+    float:left;
+    border-bottom-left-radius:0.5rem;
+}
+.dialog .btns .confirm{
+    width:50%;
+    height:100%;
+    background-color: #fff;
+    border:none;
+    outline:none;
+    font-size:1.125rem;
+    color:#575757;
+    border-bottom-right-radius:0.5rem;
+}
+
+
+/*第二页内容*/
+
+.container{
+    width:100%;
+    padding-bottom:4rem;
+    overflow-y: auto;
+    position:relative;
+}
+.container .timeline{
+    padding:0 0.625rem 0 1.25rem;
+    overflow-y: auto;
+    background-color: #fff;
+    height:100%;
+}
+.container .timeline .line{
+    display: block;
+    width:1px;
+    height:100%;
+    background-color: #efefef;
+    position:absolute;
+    left:5rem;
+    top:0;
+}
+
+.container .timeline ul{
+    margin:0;
+    padding:0;
+}
+
+.container .timeline .left{
+    float:left;
+    clear:both;
+    margin-right:1.685rem;
+}
+.container .timeline .left p{
+    margin:0;
+    font-size:0.75rem;
+    color:#9d9d9d
+}
+
+.container .timeline .left .time{
+    font-size:0.75rem;
+    color:#9d9d9d
+}
+.container .timeline .middle{
+    width:0.375rem;
+    height:0.375rem;
+    background-color: #c5c5c5;
+    border-radius:50%;
+    float:left;
+    margin-top:0.5rem;
+}
+.container .timeline .right{
+    float:left;
+    width:16.25rem;
+    margin-left:1.25rem;
+    margin-bottom:2rem;
+}
+.container .timeline .right h4{
+    font-size:0.875rem;
+    color:#949494;
+    margin:0;
+    margin-bottom:0.5rem;
+}
+.container .timeline .right p{
+    font-size:0.75rem;
+    color:#a7a7a7;
+    margin:0;
+}
+.container .timeline .right .tel{
+    color:#2982dd;
+}
+.container .placeOrder{
+    width:100%;
+    height:4rem;
+    background-color: #aaaaaa;
+    line-height:4rem;
+    text-align: center;
+    font-size:1.375rem;
+    color:#fff;
+    position:fixed;
+    left:0;
+    bottom:0;
+}
+
+
+
+
+
+
+

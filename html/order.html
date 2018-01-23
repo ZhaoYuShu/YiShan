@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>订单管理</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/order.css" type="text/css"/>
+</head>
+<body>
+
+<!--头部-->
+<div class="header">
+
+    <h4>我的地址</h4>
+
+</div>
+
+<!--tab-->
+<div class="tab">
+    <ul class="tabnav">
+        <li class="cuttor">
+            全部
+            <span class="slider"></span>
+        </li>
+        <li>
+            待支付
+            <span class="slider"></span>
+        </li>
+        <li>
+            待接单
+            <span class="slider"></span>
+        </li>
+        <li>
+            进行中
+            <span class="slider"></span>
+        </li>
+        <li>
+            待收货
+            <span class="slider"></span>
+        </li>
+        <img src="../img/right2.gif" class="last"/>
+    </ul>
+    <div class="tabcontent">
+        <div style=" display:block;" class="all">
+            <ul>
+                <li class="take">
+                    <p class="first">
+                        <span class="type">帮我取</span>
+                        <span class="state">已完成</span>
+                    </p>
+                    <p class="second">
+                        <span class="start">南皮县</span>
+                        <img src="../img/line2.gif">
+                        <span class="end">大浪淀乡</span>
+                        <span class="price">43.50元</span>
+                    </p>
+                    <p class="third">
+                        <span class="express">顺丰快递：7654443456</span>
+                        <span class="date">2月12日</span>
+                        <span class="time">12:36</span>
+                    </p>
+                </li>
+                <li class="send">
+                    <p class="first">
+                        <span class="type">帮我送</span>
+                        <span class="only">唯一标识：26643888</span>
+                        <span class="state">待接单</span>
+                    </p>
+                    <p class="second">
+                        <span class="start">大浪淀乡</span>
+                        <img src="../img/line2.gif"/>
+                        <span class="end">北京</span>
+                        <span class="price">3.56元</span>
+                    </p>
+                    <p class="third">
+                        <span class="express">申通快递：22837464678</span>
+                        <span class="date">2月12日</span>
+                        <span class="time">12:36</span>
+                    </p>
+                    <p class="fourth">
+                        <span class="weight">称重3kg</span>
+                        <button class="refund">申请退款</button>
+                    </p>
+                </li>
+                <li class="send">
+                    <p class="first">
+                        <span class="type">帮我送</span>
+                        <span class="only">唯一标识：26643888</span>
+                        <span class="state">已完成</span>
+                    </p>
+                    <p class="second">
+                        <span class="start">大浪淀乡</span>
+                        <img src="../img/line2.gif"/>
+                        <span class="end">北京</span>
+                        <span class="price">43.50元</span>
+                    </p>
+                    <p class="third">
+                        <span class="express">申通快递：876554446789</span>
+                        <span class="date">2月12日</span>
+                        <span class="time">12:36</span>
+                    </p>
+                    <p class="fourth">
+                        <span class="weight">称重3kg</span>
+                    </p>
+                </li>
+                <br/>
+            </ul>
+        </div>
+        <div class="toBePaid">
+            <ul>
+                <li class="take">
+                    <p class="first">
+                        <span class="type">帮我取</span>
+                        <span class="state">审批退回</span>
+                    </p>
+                    <p class="second">
+                        <span class="start">南皮县</span>
+                        <img src="../img/line2.gif"/>
+                        <span class="end">大浪淀乡</span>
+                        <span class="price">43.50元</span>
+                    </p>
+                    <p class="third">
+                        <span class="express">顺丰快递：7654443456</span>
+                        <span class="date">2月12日</span>
+                        <span class="time">12:36</span>
+                    </p>
+                    <p class="fourth">
+                        <button class="update">修改</button>
+                    </p>
+                </li>
+                <li class="send">
+                    <p class="first">
+                        <span class="type">帮我送</span>
+                        <span class="only">唯一标识：26643888</span>
+                        <span class="state">待接单</span>
+                    </p>
+                    <p class="second">
+                        <span class="start">大浪淀乡</span>
+                        <img src="../img/line2.gif"/>
+                        <span class="end">北京</span>
+                        <span class="price">3.56元</span>
+                    </p>
+                    <p class="third">
+                        <span class="express">申通快递：22837464678</span>
+                        <span class="date">2月12日</span>
+                        <span class="time">12:36</span>
+                    </p>
+                    <p class="fourth">
+                        <span class="weight">称重3kg</span>
+                        <button class="pay">支付</button>
+                        <button class="cancel">取消</button>
+                    </p>
+                </li>
+                <li class="send">
+                    <p class="first">
+                        <span class="type">帮我送</span>
+                        <span class="only">唯一标示：26643888</span>
+                        <span class="state">已完成</span>
+                    </p>
+                    <p class="second">
+                        <span class="start">大浪淀乡</span>
+                        <img src="../img/line2.gif" alt="">
+                        <span class="end">北京</span>
+                        <span class="price">43.50元</span>
+                    </p>
+                    <p class="third">
+                        <span class="express">申通快递：876554446789</span>
+                        <span class="date">2月12日</span>
+                        <span class="time">12:36</span>
+                    </p>
+                    <p class="fourth">
+                        <span class="weight">称重3kg</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="toBeList">待接单</div>
+        <div class="ongoing">进行中</div>
+        <div class="goods">待收货</div>
+    </div>
+</div>
+
+
+<!--底部-->
+<footer>
+    <ul>
+        <li class="home">
+            <a href="../index.html">
+                <img src="../img/home.png"/>
+                <span>首页</span>
+            </a>
+
+        </li>
+        <li class="order">
+            <a href="order.html">
+                <img src="../img/order.png"/>
+                <span>订单</span>
+            </a>
+
+        </li>
+        <li class="mine">
+            <a href="mine.html">
+                <img src="../img/mine.png"/>
+                <span>我的</span>
+            </a>
+
+        </li>
+    </ul>
+
+</footer>
+
+
+<script src="../js/vendor/jquery-3.2.1.min.js"></script>
+<script src="../js/vendor/tab.js"></script>
+<script>
+    $(function(){
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        console.log(width,height);
+        $("body").css({width:width + "px",height:height + "px"});
+        $("html").css("fontSize",width/375 +"em");
+    })
+</script>
+
+
+<script type="text/javascript">
+    $(".tab").tab({
+        type:'click'
+    });
+</script>
+
+
+</body>
+</html>

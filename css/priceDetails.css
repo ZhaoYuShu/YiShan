@@ -1,0 +1,173 @@
+
+
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #efefef;
+    margin:0;
+    padding:0;
+}
+
+/*头部*/
+.header{
+    width:100%;
+    height:2.875rem;
+    background-color: #808080;
+    padding:0 0.75rem;
+    box-sizing: border-box;
+    position:relative;
+}
+.header img{
+    position:absolute;
+    left:0.75rem;
+    top:0.875rem;
+}
+.header h4{
+    margin:0;
+    font-size:1.125rem;
+    font-weight:300;
+    color:#fefefe;
+    text-align: center;
+    line-height:2.875rem;
+}
+.header span{
+    font-size:0.75rem;
+    color:#fcfcfc;
+    position:absolute;
+    right:0.75rem;
+    top:0.875rem;
+}
+
+
+/*实际费用*/
+.money{
+    width:21.25rem;
+    height:6.5rem;
+    background-color: #fff;
+    position:absolute;
+    left:1.125rem;
+    top:3rem;
+    border-radius:0.5rem;
+    z-index:20;
+}
+.money .top{
+    width:100%;
+    height:5.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.money .top .left p{
+    margin:0;
+    text-align: center;
+}
+.money .top .left p:first-child{
+    color:#494949;
+    font-size:1.25rem;
+}
+.money .top .left p:last-child{
+    font-size:0.75rem;
+    color:#abadaf;
+}
+.money .top .right p{
+    margin:0;
+    text-align: center;
+}
+.money .top .right p:first-child{
+    color:#95989a;
+    font-size:1.25rem;
+}
+.money .top .right p:last-child{
+    font-size:0.75rem;
+    color:#abadaf;
+}
+
+.money .declaration{
+    margin:0;
+    font-size:0.625rem;
+    text-align: center;
+    color:#d5d5d5;
+}
+
+/*地图*/
+#map{
+    width:100%;
+    height:29.125rem;
+
+}
+/*单价*/
+.price{
+    width:100%;
+    height:6.25rem;
+    background-color: #fff;
+    position:fixed;
+    left:0;
+    bottom:0;
+    z-index:20;
+    padding-left:1rem;
+}
+.price p:first-child{
+    margin:0;
+    line-height:3rem;
+    position:relative;
+}
+.price p:first-child .left{
+    font-size:0.75rem;
+    color:#9a9d9f;
+}
+.price p:first-child .right{
+    font-size:0.75rem;
+    color:#4c4c4c;
+    position:absolute;
+    right:2rem;
+    top:0;
+}
+.price p:last-child{
+    margin:0;
+    line-height:3rem;
+    position:relative;
+}
+.price p:last-child .left{
+    font-size:0.75rem;
+    color:#9a9d9f;
+}
+.price p:last-child .right{
+    font-size:0.75rem;
+    color:#4c4c4c;
+    position:absolute;
+    right:2rem;
+    top:0;
+}
+
+/*遮罩层*/
+.mask{
+    background-color: rgba(0,0,0,0.5);
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:33;
+    display: none;
+}
+
+/*计价标准*/
+.eject{
+    width:18rem;
+    height:21rem;
+    background-color: #fff;
+    border-radius:0.5rem;
+    position:fixed;
+    left:1.875rem;
+    top:8rem;
+    z-index:40;
+    padding:0 1rem;
+    display: none;
+}
+.eject .title{
+    font-size:1.25rem;
+    color:#404040;
+    text-align: center;
+}
+.eject p{
+    font-size:0.75rem;
+    color:#a9acad;
+}

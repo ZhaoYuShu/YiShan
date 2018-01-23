@@ -1,0 +1,140 @@
+
+/*登录页面*/
+body{
+    overflow: hidden;
+}
+/*头像部分*/
+.portrait{
+    width:4.5rem;
+    height:4.5rem;
+    padding-left:9.375rem;
+    margin-top:6.25rem;
+    margin-bottom:1.625rem;
+}
+.portrait img{
+    width:4.5rem;
+    height:4.5rem;
+}
+
+/*手机号*/
+.mobile{
+    width:19.375rem;
+    height:3.125rem;
+    position:relative;
+    margin-left:2.063rem;
+    border-bottom:1px solid #dedede;
+    margin-bottom:0.625rem;
+}
+.mobile input{
+    width:12.5rem;
+    height:3.125rem;
+    border:none;
+    font-size:1rem;
+    margin-top:-1px;
+    outline:none;
+}
+.mobile .getCode{
+    width:5.25rem;
+    height:1.75rem;
+    font-size:0.75rem;
+    color:#f2f2f2;
+    background-color: #c6c6c6;
+    border:none;
+    outline:none;
+    position:absolute;
+    right:0;
+    top:0.75rem;
+    border-radius:0.25rem;
+}
+
+/*验证码*/
+.code{
+    width:19.375rem;
+    height:3.125rem;
+    margin-left:2.063rem;
+    border-bottom:1px solid #dedede;
+    margin-bottom:2.75rem;
+}
+.code input{
+    width:19.375rem;
+    height:3.125rem;
+    border:none;
+    font-size:1rem;
+    margin-top:-1px;
+    outline:none;
+}
+
+/*登录按钮*/
+.login{
+    width:19.375rem;
+    height:3rem;
+    margin:0 auto;
+    margin-bottom:10.313rem;
+}
+.login .loginBtn{
+    width:19.375rem;
+    height:3rem;
+    background-color: #c3c3c3;
+    color:#fefefe;
+    border:none;
+    outline:none;
+    border-radius:0.25rem;
+    font-size: 1.125rem;
+}
+
+
+/*第三方登录*/
+.others{
+    width:19.375rem;
+    height:4.75rem;
+    /*background-color: red;*/
+    margin-left:2.063rem;
+    position:relative;
+}
+.others .microblogs{
+    width:7.25rem;
+    height:4.75rem;
+    /*background-color: yellow;*/
+    float:left;
+    display:flex;
+    align-items: center;
+}
+.others .microblogs img{
+    width:1.188rem;
+    height:0.875rem;
+    margin-left:1.45rem;
+    margin-right:0.5rem;
+}
+.others .microblogs span{
+    font-size:1rem;
+    color:#b5b5b5;
+}
+
+.others .line{
+    width:0.125rem;
+    height:0.938rem;
+    position:absolute;
+    left:9.688rem;
+    top:1.875rem;
+}
+
+.others .wechat{
+    width:7.5rem;
+    height:4.75rem;
+    /*background-color: yellow;*/
+    float:left;
+    margin-left:4.5rem;
+    display:flex;
+    align-items: center;
+}
+.others .wechat img{
+    width:1.375rem;
+    height:1rem;
+    margin-right:0.5rem;
+    margin-left:0.313rem;
+}
+.others .wechat span{
+    font-size:1rem;
+    color:#b5b5b5;
+}
+

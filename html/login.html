@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>登录</title>
+    <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/login.css" type="text/css"/>
+</head>
+<body>
+
+
+<div class="container">
+
+    <!--头像-->
+    <div class="portrait">
+        <img src="../img/portrait.jpg"/>
+    </div>
+
+    <!--手机号输入框-->
+    <div class="mobile">
+        <input type="text" class="mobileInput" placeholder="手机号码"/>
+        <button class="getCode">获取验证码</button>
+    </div>
+
+
+    <!--验证码输入框-->
+    <div class="code">
+        <input type="text" placeholder="验证码"/>
+    </div>
+
+    <!--登录按钮-->
+    <div class="login">
+        <button class="loginBtn">登录</button>
+    </div>
+
+
+    <!--第三方登录-->
+    <div class="others">
+        <div class="microblogs">
+
+            <img src="../img/microblogs.gif"/>
+            <span>微博登录</span>
+        </div>
+        <img src="../img/line.gif" class="line">
+        <div class="wechat">
+
+            <img src="../img/wechat.gif"/>
+            <span>微信登录</span>
+        </div>
+    </div>
+</div>
+
+<script src="../js/vendor/jquery-3.2.1.min.js"></script>
+<script>
+    $(function(){
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        console.log(width,height);
+        $("body").css({width:width + "px",height:height + "px"});
+        $("html").css("fontSize",width/375 +"em");
+    })
+</script>
+
+
+</body>
+</html>

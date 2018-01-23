@@ -1,0 +1,534 @@
+
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #efefef;
+    margin:0;
+    padding:0;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+
+/*头部*/
+.header{
+    width:100%;
+    height:2.875rem;
+    background-color: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 0.75rem;
+    box-sizing: border-box;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:22;
+}
+.header h4{
+    margin:0;
+    font-size:1.125rem;
+    font-weight:300;
+    color:#fefefe;
+    text-align:center;
+}
+
+/*tab*/
+.tab{
+    width: 100%;
+}
+.tabnav{
+    float: left;
+    border-bottom:1px solid #d2d2d2;
+    width:100%;
+    height:2.75rem;
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    position:fixed;
+    left:0;
+    top:2.875rem;
+    z-index:22;
+}
+.tabnav li{
+    float: left;
+    height:2.75rem;
+    line-height:2.75rem;
+    text-align: center;
+    font-size: 0.875rem;
+    position:relative;
+    padding:0 1.105rem;
+    color:#696969;
+}
+.tabnav .last{
+    position:absolute;
+    right:0.5rem;
+    top:1rem;
+    width:0.438rem;
+    height:0.688rem;
+}
+.tabnav li .slider{
+    display: none;
+    width:100%;
+    height:2px;
+    background-color: #afafaf;
+    position:absolute;
+    left:0;
+    bottom:0;
+
+}
+.tabcontent{
+    float: left;
+    width: 100%;
+    background: #efefef;
+    padding-top:6.375rem;
+}
+.tabcontent .tab_con{
+    width:260px;
+    height:300px;
+    display:none;
+}
+.tabnav .cuttor{
+    color: #0c0c0c;
+}
+.tabnav .cuttor .slider{
+    display: block;
+}
+.tabcontent>div{
+    display: none;
+}
+
+
+/*全部*/
+.tabcontent .all ul{
+    padding-bottom:4.125rem;
+}
+/*帮我取*/
+.tabcontent .all li{
+    margin-bottom:0.875rem;
+}
+.tabcontent .all .take{
+    width:22.063rem;
+    background-color: #fff;
+    margin-left:0.75rem;
+    border-radius:.5rem;
+}
+.all .take .first{
+    margin:0;
+    padding:0.875rem;
+    border-bottom:1px solid #ebebeb;
+    position:relative;
+}
+.all .take .first .type{
+    font-size:0.875rem;
+    color:#171717;
+
+}
+.all .take .first .state{
+    font-size:0.75rem;
+    color:#9ea1a3;
+    position:absolute;
+    right:0.875rem;
+    bottom:0.875rem;
+}
+.all .take .second{
+    width:22.063rem;
+    margin:0;
+    padding:1.375rem 0.875rem 0.875rem 0.875rem;
+    position:relative;
+}
+.all .take .second .start{
+    font-size:0.875rem;
+    color:#454545;
+    margin-right:1rem;
+}
+.all .take .second img{
+    width:3.063rem;
+    height:0.375rem;
+}
+.all .take .second .end{
+    font-size:0.875rem;
+    color:#454545;
+    margin-left:1rem;
+}
+.all .take .second .price{
+    font-size:0.875rem;
+    color:#2e2e2e;
+    position:absolute;
+    right:2.65rem;
+    bottom:1rem;
+}
+.all .take .third{
+    margin:0;
+    padding:0 0.875rem 0.875rem;
+    color:#989b9d;
+    position:relative;
+}
+.all .take .third .express{
+    font-size:0.75rem;
+}
+.all .take .third .date{
+    font-size:0.75rem;
+    position:absolute;
+    right:3.125rem;
+    bottom:0.875rem;
+}
+.all .take .third .time{
+    font-size:0.75rem;
+    position:absolute;
+    right:0.875rem;
+    bottom:0.875rem;
+}
+
+/*帮我送*/
+.tabcontent .all .send {
+    width:22.063rem;
+    background-color: #fff;
+    margin-left:0.75rem;
+    border-radius:.5rem;
+}
+.all .send .first{
+    margin:0;
+    padding:0.875rem;
+    border-bottom:1px solid #ebebeb;
+    position:relative;
+}
+.all .send .first .type{
+    font-size:0.875rem;
+    color:#171717;
+    margin-right:0.875rem;
+}
+.all .send .first .only{
+    font-size:0.75rem;
+    color:#9ea1a3;
+}
+.all .send .first .state{
+    font-size:0.75rem;
+    color:#9ea1a3;
+    position:absolute;
+    right:0.875rem;
+    bottom:0.875rem;
+}
+.all .send .second {
+    margin:0;
+    padding:1.375rem 0.875rem 0.875rem 0.875rem;
+    position:relative;
+}
+.all .send .second .start{
+    font-size:0.875rem;
+    color:#454545;
+    margin-right:1rem;
+}
+.all .send .second img{
+    width:3.063rem;
+    height:0.375rem;
+}
+.all .send .second .end{
+    font-size:0.875rem;
+    color:#454545;
+    margin-left:1rem;
+}
+.all .send .second .price{
+    font-size:0.875rem;
+    color:#2e2e2e;
+    position:absolute;
+    right:0.875rem;
+    bottom:1rem;
+}
+.all .send .third{
+    margin:0;
+    padding:0 0.875rem 0.875rem;
+    color:#989b9d;
+    position:relative;
+}
+.all .send .third .express{
+    font-size:0.75rem;
+}
+.all .send .third .date{
+    font-size:0.75rem;
+    position:absolute;
+    right:3.125rem;
+    bottom:0.875rem;
+}
+.all .send .third .time{
+    font-size:0.75rem;
+    position:absolute;
+    right:0.875rem;
+    bottom:0.875rem;
+}
+ .all .send .fourth{
+    padding:0.375rem 0.875rem 0.875rem;
+    margin:0;
+    position:relative;
+}
+.all .send .fourth .weight{
+    font-size:0.875rem;
+    color:#414141;
+
+}
+.all .send .fourth .refund{
+    width:5rem;
+    height:2rem;
+    background-color: #959595;
+    border:none;
+    outline:none;
+    border-radius:0.25rem;
+    position:absolute;
+    right:0.875rem;
+    bottom:0.875rem;
+    color:#eaeaea;
+    font-size:0.875rem;
+}
+
+/*待支付*/
+.tabcontent .toBePaid ul{
+    padding-bottom:4.125rem;
+}
+
+/*帮我取*/
+.tabcontent .toBePaid li{
+    margin-bottom:0.875rem;
+}
+.tabcontent .toBePaid .take{
+    width:22.063rem;
+    background-color: #fff;
+    margin-left:0.75rem;
+    border-radius:0.5rem;
+}
+.toBePaid .take .first{
+    margin:0;
+    padding:0.875rem;
+    border-bottom:1px solid #ebebeb;
+    position:relative;
+}
+.toBePaid .take .first .type{
+    font-size:0.875rem;
+    color:#171717;
+}
+.toBePaid .take .first .state{
+    font-size:0.75rem;
+    color: #9ea1a3;
+    position:absolute;
+    bottom:0.875rem;
+    right:0.875rem;
+}
+.toBePaid .take .second{
+    margin:0;
+    padding:1.375rem 0.875rem 0.875rem 0.875rem;
+    position:relative;
+}
+.toBePaid .take .second .start{
+    font-size:0.875rem;
+    color:#454545;
+    margin-right:1rem;
+}
+.toBePaid .take .second img{
+    width:3.063rem;
+    height:0.375rem;
+}
+.toBePaid .take .second .end{
+    font-size:0.875rem;
+    color:#454545;
+    margin-left:1rem;
+}
+.toBePaid .take .second .price{
+    font-size:0.875rem;
+    color:#2e2e2e;
+    position:absolute;
+    right:0.875rem;
+    bottom:1rem;
+}
+.toBePaid .take .third{
+    margin:0;
+    padding:0 0.875rem 0.875rem;
+    color:#989b9d;
+    position:relative;
+}
+.toBePaid .take .third .express{
+    font-size:0.75rem;
+}
+.toBePaid .take .third .date{
+    font-size:0.75rem;
+    position:absolute;
+    right:3.125rem;
+    bottom:0.875rem;
+}
+.toBePaid .take .third .time{
+    font-size:0.75rem;
+    position:absolute;
+    right:0.875rem;
+    bottom:0.875rem;
+}
+.toBePaid .take .fourth{
+    width:100%;
+    height:1rem;
+    padding:0.875rem;
+    margin:0;
+    position:relative;
+}
+.toBePaid .take .fourth .update{
+    width:5rem;
+    height:2rem;
+    background-color: #959595;
+    border:none;
+    outline:none;
+    border-radius:0.25rem;
+    position:absolute;
+    right:2.65rem;
+    bottom:0.875rem;
+    color:#eaeaea;
+    font-size:0.875rem;
+}
+
+/*帮我送*/
+.tabcontent .toBePaid .send{
+    width:22.063rem;
+    background-color: #fff;
+    margin-left:0.75rem;
+    border-radius: 0.5rem;
+}
+.toBePaid .send .first{
+    margin:0;
+    padding:0.875rem;
+    border:1px solid #ebebeb;
+    position:relative;
+}
+.toBePaid .send .first .type{
+    font-size:0.875rem;
+    color:#171717;
+    margin-right:0.875rem;
+}
+.toBePaid .send .first .only{
+    font-size:0.75rem;
+    color:#9ea1a3;
+}
+.toBePaid .send .first .state{
+    font-size:0.75rem;
+    color:#9ea1a3;
+    position:absolute;
+    right:0.875rem;
+    bottom:0.875rem;
+}
+.toBePaid .send .second{
+    margin:0;
+    padding:1.375rem 0.875rem 0.875rem;
+    position:relative;
+}
+.toBePaid .send .second .start{
+    font-size:0.875rem;
+    color:#454545;
+    margin-right:1rem;
+}
+.toBePaid .send .second img{
+    width:3.063rem;
+    height:0.375rem;
+}
+.toBePaid .send .second .end{
+    font-size:0.875rem;
+    color:#454545;
+    margin-left:1rem;
+}
+.toBePaid .send .second .price{
+    font-size:0.875rem;
+    color:#2e2e2e;
+    position:absolute;
+    right:0.875rem;
+    bottom:1rem;
+}
+.toBePaid .send .third {
+    margin:0;
+    padding:0 0.875rem 0.875rem;
+    color:#989b9d;
+    position:relative;
+}
+.toBePaid .send .third .express{
+    font-size:0.75rem;
+}
+.toBePaid .send .third .date{
+    font-size:0.75rem;
+    position:absolute;
+    right:3.125rem;
+    bottom:0.875rem;
+}
+.toBePaid .send .third .time{
+    font-size:0.75rem;
+    position:absolute;
+    right:0.875rem;
+    bottom:0.875rem;
+}
+.toBePaid .send .fourth{
+    margin:0;
+    padding:0.375rem 0.875rem 0.875rem;
+    position:relative;
+}
+.toBePaid .send .fourth .weight{
+    font-size:0.875rem;
+    color:#414141;
+}
+.toBePaid .send .fourth .pay{
+    width:5rem;
+    height:2rem;
+    background-color: #959595;
+    border:none;
+    outline:none;
+    position:absolute;
+    right:6.438rem;
+    bottom:0.875rem;
+    font-size:0.875rem;
+    color:#eaeaea;
+    border-radius:0.25rem;
+}
+.toBePaid .send .fourth .cancel{
+    width:5rem;
+    height:2rem;
+    background-color: #fff;
+    outline:none;
+    position:absolute;
+    right:0.875rem;
+    bottom:0.875rem;
+    color:#c7c7c7;
+    font-size:0.875rem;
+    border-radius:0.25rem;
+    border:1px solid #c7c7c7;
+}
+
+/*底部tabbar*/
+footer{
+    width:100%;
+    height:3.375rem;
+    position: fixed;
+    left:0;
+    bottom:0;
+    background-color: #f5f5f5;
+}
+
+footer ul{
+    padding:0;
+    height:3.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:0;
+}
+
+footer ul li a{
+    float:left;
+    height:3.375rem;
+    font-size:0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer .home span{
+    color:#2c2c2c;
+}
+footer .order span{
+    color:#2c2c2c;
+}
+footer .mine span{
+    color:#2c2c2c;
+}

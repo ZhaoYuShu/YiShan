@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>个人资料</title>
+
+    <!--<link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.css" type="text/css"/>-->
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/information.css" type="text/css"/>
+</head>
+<body>
+
+    <div class="header">
+        <a href="mine.html">
+            <img src="../img/left.gif"/>
+        </a>
+
+        <h4>个人资料</h4>
+
+        <span>保存</span>
+
+    </div>
+
+    <div class="list">
+        <ul>
+            <li class="portrait">
+                <a href="#">
+                    <b>头像</b>
+                    <div class="right">
+                        <img src="../img/portrait3.jpg"/>
+                        <img src="../img/right2.gif"/>
+                    </div>
+                </a>
+            </li>
+            <li class="nickname">
+                <a href="information2.html">
+                    <b>昵称</b>
+                    <div class="right">
+                        <span>小脚裤</span>
+                        <img src="../img/right2.gif"/>
+                    </div>
+                </a>
+            </li>
+            <li class="gender">
+                <a href="#">
+                    <b>性别</b>
+                    <div class="right">
+                        <span>男</span>
+                        <img src="../img/right2.gif"/>
+                    </div>
+                </a>
+            </li>
+            <li class="birthday">
+                <a href="#">
+                    <b>生日</b>
+                    <div class="right">
+                        <span>1988.09.09</span>
+                        <img src="../img/right2.gif"/>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="../js/vendor/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function(){
+            var width = document.documentElement.clientWidth;
+            var height = document.documentElement.clientHeight;
+            console.log(width,height);
+            $("body").css({width:width + "px",height:height + "px"});
+            $("html").css("fontSize",width/375 +"em");
+        })
+    </script>
+</body>
+</html>

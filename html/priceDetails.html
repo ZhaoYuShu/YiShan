@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>价格明细</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/priceDetails.css" type="text/css"/>
+</head>
+<body>
+
+<!--头部-->
+<div class="header">
+    <a href="javascript:history.back(-1)">
+        <img src="../img/left.gif"/>
+    </a>
+
+    <h4>价格明细</h4>
+
+    <span class="note">计价标准</span>
+
+</div>
+<div style="width:100%;height:3.375rem;background-color: #808080;"></div>
+
+
+
+<!--实际费用-->
+<div class="money">
+    <div class="top">
+        <div class="left">
+            <p>2.3</p>
+            <p>合计费用（元）</p>
+        </div>
+        <img src="../img/line3.gif"/>
+        <div class="right">
+            <p>5.6</p>
+            <p>预计里程（公里）</p>
+        </div>
+    </div>
+    <p class="declaration">实际费用可能因实际里程、货物质量等因素有差异</p>
+</div>
+
+<!--地图-->
+<div id="map"></div>
+
+<!--单价-->
+<div class="price">
+    <p>
+        <span class="left">起步价（<=5kg或者50cm*500cm）</span>
+        <span class="right">2.0元</span>
+    </p>
+    <p>
+        <span class="left">起标加价</span>
+        <span class="right">1.0元</span>
+    </p>
+</div>
+
+<!--计价标准-->
+<div class="eject">
+    <p class="title">计价标准</p>
+    <p>1.默认韵达快递及邮政小包，如果韵达不到的，发邮政小包。顺丰要补运费，邮政不补。中通圆通等其他快递暂时不支持。</p>
+    <p>下单后发现订单产品或者收件人信息有问题的，如果还没有发货的。直接申请退款重新下单。下单后需要改其他快递补运费的，请联系客服补差价。公司支付宝账号286078527@qq.com 姓名：罗英保 快递发送过程中出现问题的，请第一时间致电对应快递公司的官方电话或者对应快递收件方网点的电话。</p>
+    <p>2.退换货流程。</p>
+    <p>退货订单直接在阿里申请退款（仅限已经发货且客户收到的订单）。</p>
+</div>
+
+
+<!--遮罩层-->
+<span class="mask"></span>
+
+<script src="../js/vendor/jquery-3.2.1.min.js"></script>
+<script src="https://webapi.amap.com/maps?v=1.4.2&key=809245956602e754e6a6629e6ddd2474"></script>
+<script src="../js/priceDetails.js"></script>
+<script>
+    $(function(){
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        console.log(width,height);
+        $("body").css({width:width + "px",height:height + "px"});
+        $("html").css("fontSize",width/375 +"em");
+        $(".mask").css({width:width + "px",height:height + "px"});
+
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>个人资料修改昵称</title>
+    <!--<link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.css" type="text/css"/>-->
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/information2.css" type="text/css"/>
+</head>
+<body>
+
+<div class="header">
+    <a href="information.html">
+        <img src="../img/left.gif"/>
+    </a>
+
+    <h4>个人资料</h4>
+
+    <span>保存</span>
+
+</div>
+
+
+<div class="nickname">
+    <span>昵称</span>
+    <input type="text" value="小脚裤" class="name"/>
+    <b class="clear">×</b>
+</div>
+
+<script src="../js/vendor/jquery-3.2.1.min.js"></script>
+<script src="../js/information2.js"></script>
+<script>
+    $(function(){
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        console.log(width,height);
+        $("body").css({width:width + "px",height:height + "px"});
+        $("html").css("fontSize",width/375 +"em");
+    })
+</script>
+</body>
+</html>

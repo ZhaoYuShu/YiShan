@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>帮我送</title>
+    <link rel="stylesheet" href="../css/frozen.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/send.css" type="text/css"/>
+</head>
+<body>
+
+<!--头部-->
+<div class="header">
+    <a href="../index.html">
+        <img src="../img/left.gif"/>
+    </a>
+
+    <h4>帮我送</h4>
+
+    <span class="note">下单须知</span>
+
+</div>
+
+<!--送件类别-->
+<div class="type">
+    <p class="title">取件类别</p>
+    <div>
+        <span class="first">电子数码</span>
+        <span class="second">服装鞋帽</span>
+        <span class="third">护肤美妆</span>
+        <span class="fourth">电子数码</span>
+        <span class="fifth">食品</span>
+        <span class="sixth">其他</span>
+        <input type="text" class="others" placeholder="请输入物品类别"/>
+    </div>
+</div>
+
+
+<!--取货模块-->
+<div class="pick">
+    <p class="title">取货模块</p>
+    <div class="box1">
+        <input type="text" placeholder="取货人姓名" class="name"/>
+        <input type="text" placeholder="取货人电话" class="mobile"/>
+        <img src="../img/person.gif" class="person"/>
+    </div>
+    <div class="box2">
+        <p class="address">取货人地址</p>
+        <button class="used">常用</button>
+    </div>
+</div>
+
+<!--收货模块-->
+<div class="get">
+    <p class="title">收货模块</p>
+    <div class="box1">
+        <input type="text" class="name" placeholder="收货人姓名"/>
+        <input type="text" class="mobile" placeholder="收货人电话"/>
+        <button>替他人取货</button>
+    </div>
+    <div class="box2">
+        <p class="address">收货人地址</p>
+        <button class="used">常用</button>
+    </div>
+</div>
+
+<!--实际重量-->
+<div class="weight">
+    <p class="title">实际重量（kg）</p>
+    <div>
+        <input type="text" placeholder="请填写整数重量" class="weights"/>
+        <label class="ui-switch">
+            <input type="checkbox" checked>
+        </label>
+    </div>
+</div>
+
+
+<!--备注留言-->
+<div class="message">
+    <p class="title">备注</p>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+</div>
+
+
+<!--下一步，选择物流-->
+<button class="next">下一步 选择物流</button>
+
+
+<!--常用地址-->
+<div class="usedAddress">
+    <p class="title">常用地址</p>
+
+    <ul class="list">
+        <li>
+            <p>沧州市沧县</p>
+            <p>大王庄永安街道12号与世纪大道交叉路口</p>
+            <button class="default">设为默认</button>
+        </li>
+        <li>
+            <p>沧州市沧县</p>
+            <p>大王庄永安街道12号与世纪大道交叉路口</p>
+            <button class="default">设为默认</button>
+        </li>
+        <li>
+            <p>沧州市沧县</p>
+            <p>大王庄永安街道12号与世纪大道交叉路口</p>
+            <button class="default">设为默认</button>
+        </li>
+
+    </ul>
+</div>
+
+
+<!--弹出是否可以访问通讯录-->
+<div class="dialog">
+    <p class="title">“以山”想访问您的通讯录</p>
+    <p class="message">使用联系人信息</p>
+    <div class="btns">
+        <button class="cancel">取消</button>
+        <button class="confirm">确定</button>
+    </div>
+</div>
+
+<!--下单须知弹出层-->
+<div class="information">
+    这里是下单须知
+</div>
+
+<!--遮罩层-->
+<span class="mask"></span>
+
+
+<!--物流选择模块-->
+<div class="choose">
+    <div class="top">
+        <div class="logoImg">
+            <img src="../img/shentong.jpg" class="logo"/>
+        </div>
+
+        <div class="money">
+            <p class="price">6元</p>
+            <p class="priceDetails">快递费用4元+服务费2元</p>
+        </div>
+        <span class="close">×</span>
+    </div>
+    <div class="bottom">
+        <span class="first">韵达快递</span>
+        <span class="second">申通快递</span>
+        <span class="third">顺丰快递</span>
+        <span class="fourth">邮政快递</span>
+    </div>
+    <button class="nextStep">下一步</button>
+</div>
+
+<script src="../js/vendor/jquery-3.2.1.min.js"></script>
+<script src="../js/send.js"></script>
+<script>
+    $(function(){
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        console.log(width,height);
+        $("body").css({width:width + "px",height:height + "px"});
+        $("html").css("fontSize",width/375 +"em");
+        $(".mask").css({width:width + "px",height:height + "px"});
+    })
+</script>
+</body>
+</html>
